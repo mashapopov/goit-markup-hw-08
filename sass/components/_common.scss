@@ -1,0 +1,19 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #FFFFFF;
+    color: var(--primary-text-color);
+}
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.link{
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }

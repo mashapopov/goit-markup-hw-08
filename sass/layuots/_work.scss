@@ -1,0 +1,54 @@
+/* -------------------наши роботі--------------- */
+
+.work
+{ 
+    display: block;
+    padding-top: 0;
+    padding-bottom: 94px;
+      @media screen and (max-width: 1199px) {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+}
+.work__title{
+  
+    text-align: center; 
+    @include font(700, 36px, 1.16, 0.03em);
+    color:var(--primary-text-color);
+    margin-bottom: 50px;
+    }
+
+    .work__list{
+        display: flex;
+    }
+    .work__item:not(:last-child){
+        margin-right: 32px;
+    }
+.work__link{
+    position: relative; 
+    display: block;
+    line-height: 0;
+}
+.work__text{
+position: absolute;  
+text-align: center;
+@include font(700, 14px, 1.14, 0.03em);
+text-transform: uppercase;  
+bottom: 0;
+right: 0;
+width: 370px;
+height: 70px;
+padding-top: 27px;
+text-align: center;
+background: rgba(47, 48, 58, 0.8);
+color: #ffffff;
+}
+

@@ -1,0 +1,109 @@
+/* ---------команда--------------- */
+
+.team{
+    background: #F5F4FA;
+}
+ .team__title{
+font-style: normal;
+text-align: center;
+@include font(700, 36px, 1.16, 0.03em);
+margin-bottom: 50px;
+color: var(--primary-text-color);
+@media screen and (max-width: 1199px) {
+ @include font(700, 28px, 1.17, 0.03em); 
+ margin-bottom: 30px;
+ }
+ }
+ .team__list{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .team__item{
+width: 270px;
+left: 815px;
+top: 1632px;
+background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
+// &:not(:last-child){
+//     margin-right: 30px;
+//  }
+@media screen and (max-width: 767px) {
+   &:not(:last-child) {
+     margin-bottom: 30px;
+   }
+ }
+
+ @media screen and (min-width: 768px) {
+   &:not(:nth-child(2n)) {
+     margin-right: 30px;
+   }
+ }
+
+ @media screen and (max-width: 1199px) {
+   &:not(:nth-last-child(-n + 2)) {
+     margin-bottom: 30px;
+   }
+ }
+
+ @media screen and (min-width: 1200px) {
+   &:not(:last-child) {
+     margin-right: 30px;
+   }
+ }   
+
+ }
+ .team__card{
+   padding: 30px 0;
+   text-align: center;
+}
+
+  .card__title{
+   @include font(500, 16px, 1.18, 0.03em);
+    text-align: center;
+    color: var(--primary-text-color);
+  }
+  .card__text{
+   @include font(400, 16px, 1.18, 0.03em);
+    text-align: center;
+    color: var(--titl-text-color);
+    padding-top: 10px; 
+  }
+
+/* Наша команда -- соц сети  */
+.socials{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}   
+.card__socials{
+  margin-top: 16px; 
+}
+.socials__link{
+   color:  #AFB1B8;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   background:var(--color-white);
+ 
+   transition: color 250ms linear,background 250ms linear;
+
+   &:hover, &:focus{
+      background-color: var(--accent-color);
+      color: var(--color-white);
+    }
+}
+
+.socials__icon{
+   fill: currentColor;
+  &:not(:last-child){
+   margin-right: 10px;
+}
+}
+
+

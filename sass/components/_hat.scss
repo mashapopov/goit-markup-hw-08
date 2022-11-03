@@ -1,0 +1,59 @@
+/* -------------шапка в mane--------------- */
+.overlay{
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+     url(../images/header.jpg);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    height: 600px;
+    background-color:  #C4C4C4;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.hat{
+    padding: 200px 0;
+    text-align: center;   
+    
+   
+
+    
+}
+.hat-title{
+    @include font(900, 44px, 1.36, 0.06em);
+    // font-weight: 900;
+    // font-size: 44px;
+    // line-height: 1.36;
+    //  letter-spacing: 0.06em;
+     text-align: center;  
+   
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left:auto;
+    width: 696px;
+}
+
+.hat-btn{
+    display: inline-block;
+     align-items: center; 
+    font-family: 'Roboto';
+    font-style: normal;
+    @include font(700, 16px, 1.87, 0.06em);
+    //   letter-spacing: 0.06em;
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: 1.87;
+    background-color:var(--accent-color) ;
+    color: #FFFFFF;
+    cursor: pointer;
+  
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: none;
+    text-align: center; 
+    min-width: 216px;
+ 
+    }  
