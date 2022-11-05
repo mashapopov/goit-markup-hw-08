@@ -25,7 +25,7 @@ ul {
   list-style: none;
 }
 
-.footer-cot-link, .property__icon, .contacts__tel, .contacts__mail, .header__container {
+.footer-cot-link, .property__icon, .header__container {
   display: flex;
   align-items: center;
 }
@@ -65,6 +65,22 @@ img {
 .header {
   background-color: #FFFFFF;
   border-bottom: 1px solid #ececec;
+  height: 40px;
+}
+@media screen and (min-width: 480px) {
+  .header {
+    height: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 80px;
+  }
 }
 
 .header__logo {
@@ -75,8 +91,13 @@ img {
 }
 
 .navigation__list {
-  display: flex;
-  margin-left: 93px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+    margin-left: 93px;
+  }
 }
 
 .navigation__item:not(:last-child) {
@@ -103,12 +124,24 @@ img {
 }
 
 .contacts {
-  display: flex;
-  justify-content: center;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts__mail, .contacts__tel {
@@ -121,6 +154,12 @@ img {
   color: var(--titl-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .contacts__mail, .contacts__tel {
+    display: flex;
+    align-items: center;
+  }
+}
 .contacts__mail:hover, .contacts__tel:hover, .contacts__mail:focus, .contacts__tel:focus {
   color: var(--accent-color);
 }
@@ -129,6 +168,13 @@ img {
 .contacts__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__tel {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* подчеркивание для активной страницы */
@@ -216,22 +262,39 @@ img {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header.jpg);
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   background-color: #C4C4C4;
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .overlay {
+    max-width: 768px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    max-width: 1600px;
+    height: 600px;
+  }
+}
 
 .hat {
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hat {
+    padding: 200px 0;
+  }
 }
 
 .hat-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
@@ -240,7 +303,18 @@ img {
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
-  width: 696px;
+  width: 360px;
+  height: 84px;
+}
+@media screen and (min-width: 1200px) {
+  .hat-title {
+    width: 696px;
+    height: 120px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .hat-btn {
@@ -899,6 +973,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #FFFFFF;
@@ -1024,8 +1099,6 @@ img {
 
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
   left: 50%;
   top: 50%;
   background: #FFFFFF;
@@ -1033,6 +1106,18 @@ img {
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -1079,11 +1164,19 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 30px;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal-form-name, .modal-form-tel,
@@ -1113,6 +1206,16 @@ img {
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
+}
+@media screen and (max-width: 1199px) {
+  .modal-input {
+    max-width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-input {
+    width: 448px;
+  }
 }
 
 .modal-form-comment {
@@ -1205,12 +1308,20 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .modal-label-policy {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .checkbox {

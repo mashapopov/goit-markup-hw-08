@@ -2,6 +2,16 @@
 .header{
     background-color:#FFFFFF ;
     border-bottom: 1px solid #ececec;
+    height: 40px;
+    @media screen  and (min-width: 480px){
+    height: 60px;
+    }
+    @media screen  and (min-width: 768px){
+      height: 80px;
+    }
+    @media screen  and (min-width: 1200px){
+       height: 80px;  
+    }
 }
 .header__container{
     @extend %align-list;
@@ -15,8 +25,12 @@
 }
 
 .navigation__list {
-    display: flex; 
-    margin-left: 93px; 
+    display: none;
+    
+    @media screen  and (min-width: 768px){
+            display: flex; 
+            margin-left: 93px; 
+    }
 }
 .navigation__item:not(:last-child)
 {
@@ -40,14 +54,29 @@
     
 }
 .contacts{
-display: flex;
-justify-content: center;
+    display: none;
+    @media screen  and (min-width: 768px){
+        display: inline-block;
+    // display: flex;
+    // justify-content: center;
+    }
+
+  @media screen  and (min-width: 1200px){
+    display: flex;
+    justify-content: center;
+    }
 }
 .contacts__item:not(:last-child){
-    margin-right: 50px;
+    
+    @media screen  and (min-width: 1200px){
+        margin-right: 50px;
+    }
 }
 .contacts__mail {
-    @extend %align-list;
+    @media screen  and (min-width: 1200px){
+        display: flex;
+        align-items: center;
+    }
     padding-top: 32px;
     padding-bottom: 32px;
    @include font(500, 14px, 1.14, 0.02em); 
@@ -63,8 +92,13 @@ justify-content: center;
     margin-right: 10px;
 }
  .contacts__tel {
-    @extend %align-list;
-    @extend .contacts__mail;
+@extend .contacts__mail;
+@media screen  and (min-width: 1200px){
+    display: flex;
+    align-items: center;
+}
+    
+    
 }
 
 

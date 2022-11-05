@@ -213,7 +213,7 @@ text-align: center;
  .footer-form-title{
  display: block;
  @include font(700, 14px, 1.14, 0.03em);
- 
+ text-align: center;
  text-transform: uppercase;
  margin-bottom: 20px;
  color: #FFFFFF;
@@ -251,6 +251,8 @@ text-align: center;
     width: 358px;
     margin: 0;
 }
+
+
  }
  .form-list input::placeholder{
      @include font(400, 16px, 1.25, 0.03em);
