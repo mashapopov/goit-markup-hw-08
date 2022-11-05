@@ -3,34 +3,42 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        gap: 30px;
       }
 }
 .property__item{
 
-    @media screen and (max-width: 767px) {
-        &:not(:last-child) {
-          margin-bottom: 30px;
-        }
-      }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
+
+    // @media screen and (max-width: 767px) {
+    //     &:not(:last-child) {
+    //       margin-bottom: 30px;
+    //     }
+    //   }
     
-      @media screen and (min-width: 768px) {
-        &:not(:nth-child(2n)) {
-          margin-right: 30px;
-        }
-      }
+    //   @media screen and (min-width: 768px) {
+    //     &:not(:nth-child(2n)) {
+    //       margin-right: 30px;
+    //     }
+    //   }
     
-      @media screen and (max-width: 1199px) {
-        &:not(:nth-last-child(-n + 2)) {
-          margin-bottom: 30px;
-        }
-      }
+    //   @media screen and (max-width: 1199px) {
+    //     &:not(:nth-last-child(-n + 2)) {
+    //       margin-bottom: 30px;
+    //     }
+    //   }
     
-      @media screen and (min-width: 1200px) {
-        &:not(:last-child) {
-          margin-right: 30px;
-        }
-      }      
-}
+    //   @media screen and (min-width: 1200px) {
+    //     &:not(:last-child) {
+    //       margin-right: 30px;
+    //     }
+    //   }      
+    }
  .property__icon{
     color: var(--primary-text-color);
     @extend %align-list;
@@ -59,11 +67,13 @@
     @include font(400, 14px, 1.71, 0.03em);
     color: var(--titl-text-color);
     @media screen and (min-width: 768px) {
-        max-width: 354px;
+        max-width: 450px;
+          height: 50px;
       }
     
       @media screen and (min-width: 1200px) {
         width: 270px;
+        height: 72px;
       }
 }
 
