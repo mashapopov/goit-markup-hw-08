@@ -54,6 +54,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+@media screen and (max-width: 480px) {
+  img {
+    width: 100%;
+  }
+}
 
 .section {
   padding: 60px 0;
@@ -1044,7 +1049,7 @@ img {
 
 .form-list input {
   height: 50px;
-  width: 320px;
+  width: 290px;
   align-items: center;
   text-align: center;
   margin-bottom: 20px;
@@ -1161,7 +1166,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .modal {
     width: 450px;
     height: 609px;
