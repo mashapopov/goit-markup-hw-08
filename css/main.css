@@ -390,49 +390,44 @@ img {
 
 /* -------------шапка в mane--------------- */
 .overlay {
-  background-image: var(--bg-gradient), url(/images/Headermob.jpg);
+  background-image: var(--bg-gradient), url(../images/header/header-mob@1.jpg);
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  height: 400px;
+  max-width: 480px;
+  max-height: 400px;
   background-color: #C4C4C4;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
-@media screen and (min-width: 480px) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    max-width: 480px;
-    height: 400px;
-    background-image: var(--bg-gradient), url(/images/Headermob.jpg);
-  }
-}
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: var(--bg-gradient), url(/images/headermob-2x.jpg);
+    background-image: var(--bg-gradient), url("../images/header/header-mob@2.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .overlay {
     max-width: 768px;
-    height: 400px;
-    background-image: var(--bg-gradient), url(/images/Headertabl.jpg);
+    max-height: 400px;
+    background-image: var(--bg-gradient), url(../images/header/header-tab@1.jpg);
+    background-size: 768px 400px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: var(--bg-gradient), url(/images/Headertabl-2x.jpg);
+    background-image: var(--bg-gradient), url("../images/header/header-tab@2.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .overlay {
     max-width: 1600px;
-    height: 600px;
-    background-image: var(--bg-gradient), url(../images/header.jpg);
+    max-height: 600px;
+    background-image: var(--bg-gradient), url(../images/header/header-desk@1.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: var(--bg-gradient), url(/images/header-2x.jpg);
+    background-image: var(--bg-gradient), url("../images/header/header-desk@2.jpg");
   }
 }
 

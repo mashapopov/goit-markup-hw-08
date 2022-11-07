@@ -1,50 +1,68 @@
 /* -------------шапка в mane--------------- */
 .overlay{
     background-image: var(--bg-gradient),
-     url(/images/Headermob.jpg);
+    url(../images/header/header-mob@1.jpg);
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    height: 400px;
+    max-width: 480px;
+    max-height: 400px;
+
+    // width: 100%;
+    // height: 400px;
     background-color:  #C4C4C4;
     background-repeat: no-repeat;
     background-size: cover;
-    @media screen  and (min-width: 480px){
-        max-width: 480px;
-        height: 400px;
-        background-image: var(--bg-gradient), url(/images/Headermob.jpg);
-        @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: var(--bg-gradient),
-    url(/images/headermob-2x.jpg);
-}
-        }
-    @media screen  and (min-width: 768px){
-        max-width: 768px;
-        height: 400px;
-        background-image: var(--bg-gradient),
-     url(/images/Headertabl.jpg);
-     @media (min-device-pixel-ratio: 2),
-     (min-resolution: 192dpi),
-     (min-resolution: 2dppx) {
-       background-image: var(--bg-gradient),
-       url(/images/Headertabl-2x.jpg);
-   }
-        }
-    @media screen  and (min-width: 1200px){
+        background-position: center;
+//     background-size: 480px 400px;
+// ---------------------------------
+
+
+
+
+
+
+  
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: var(--bg-gradient),
+        url('../images/header/header-mob@2.jpg');}
+
+
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+            max-height: 400px;
+            background-image: var(--bg-gradient),
+              url(../images/header/header-tab@1.jpg);
+            background-size: 768px 400px;
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+              background-image: var(--bg-gradient),
+                url('../images/header/header-tab@2.jpg');
+            }
+          }
+
+@media screen and (min-width: 1200px) {
     max-width: 1600px;
-    height: 600px;
+    max-height: 600px;
     background-image: var(--bg-gradient),
-     url(../images/header.jpg);
-     @media (min-device-pixel-ratio: 2),
-     (min-resolution: 192dpi),
-     (min-resolution: 2dppx) {
-       background-image: var(--bg-gradient),
-       url(/images/header-2x.jpg);
-   }
+      url(../images/header/header-desk@1.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: var(--bg-gradient),
+        url('../images/header/header-desk@2.jpg');
     }
-}
+  }
+
+    }
+
+
+
+
+
+
+  
+
+
+
+
+
 .hat{
     padding: 118px 0;
     text-align: center;   
