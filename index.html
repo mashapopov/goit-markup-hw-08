@@ -18,6 +18,9 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
     <header class="header">
       <div class="header__container container">
       <a class="header__logo logo link" href="./index.html"><span class="logo__colortext">Web</span>Studio</a>
+      
+      
+
       <nav class="navigation header__navigation">
         <ul class="navigation__list" > 
           <li class="navigation__item list" ><a class="navigation__link current link" href="./index.html"> Студія</a></li>
@@ -40,8 +43,62 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
             </svg> 
             +38 096 111 11 11</a></li>
       </ul>
+      <button type="button" class="menu-open-btn" data-menu-open>
+        <svg  height="40" width="40">
+          <use  href="./images/icons.svg#icon-open"></use>
+        </svg>
+       </button>
     </div>
+
+
     </header>
+
+
+<div class="mob-menu" data-menu >
+  <div class="container">
+
+
+    <div class="mob-menu-top">
+    <button class="menu-close-btn" type="button" data-menu-close >
+      <svg  height="18" width="18">
+        <use  href="./images/close.svg#close"></use>
+      </svg>
+    </button>
+    <ul class="mob-menu-list" > 
+      <li class="mob-menu-item"><a class="mob-menu-link link" href="./index.html"> Студія</a></li>
+      <li class="mob-menu-item"><a class="mob-menu-link link" href="./portfolio.html">Портфоліо</a></li>
+      <li class="mob-menu-item"><a class="mob-menu-link link" href="#">Контакти</a></li>
+    </ul>
+  </div>
+  <div class="mob-menu-bottom">
+    <ul class="mob-contacts ">
+       <li class="mob-item list">
+        <a class="mob-menu-tel link" href="tel:+380961111111">
+          +38 096 111 11 11</a>
+        </li>
+      <li class="mob-item list">
+        <a class="mob-menu-mail link " href="mailto:info@devstudio.com">
+          info@devstudio.com</a>
+      </li>
+    </ul>
+    <ul class="mod-sot list">
+      <li class="mod-sot-list ">
+        <a class="mod-sot-link link" href="">Instagram</a>
+      </li>
+      <li class="mod-sot-list ">
+        <a class="mod-sot-link link" href="">Twitter</a>
+      </li>
+      <li class="mod-sot-list ">
+        <a class="mod-sot-link link" href="">Facebook</a>
+      </li>
+      <li class="mod-sot-list ">
+        <a class="mod-sot-link link" href="">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
+
     <!-- главная-->
     <main >
       <!--блок 1-->
@@ -630,7 +687,9 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
       </div>
       
       </div>
-    <script src="./js/modal.js"></script>
+      <!-- <script src="./js/menu.js"></script> -->
+    <script src="./js/modal.js"></script> 
+    
      <script>
       (() => {
           document.querySelector('.js-speaker-form').addEventListener('submit', e => {
