@@ -40,8 +40,62 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
             </svg> 
             +38 096 111 11 11</a></li>
       </ul>
+
+      <button type="button" class="menu-open-btn" data-menu-open>
+        <svg class="icon-close" height="40" width="40">
+          <use  href="./images/icons.svg#icon-open"></use>
+        </svg>
+       </button>
+
     </div>
     </header>
+
+    <div class="mob-menu visually-hidden is-hidden" data-menu >
+      <div class="container">
+    
+    
+    
+        <div class="mob-menu-top">
+    <button class="menu-close-btn" type="button" data-menu-close >
+          <svg class="icon-close" height="40" width="40">
+            <use  href="./images/close.svg#close"></use>
+          </svg>
+        </button>
+    
+        <ul class="mob-menu-list" > 
+          <li class="mob-menu-item"><a class="mob-menu-link link" href="./index.html"> Студія</a></li>
+          <li class="mob-menu-item"><a class="mob-menu-link link" href="./portfolio.html">Портфоліо</a></li>
+          <li class="mob-menu-item"><a class="mob-menu-link link" href="#">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="mob-menu-bottom">
+        <ul class="mob-contacts ">
+           <li class="mob-item list">
+            <a class="mob-menu-tel link" href="tel:+380961111111">
+              +38 096 111 11 11</a>
+            </li>
+          <li class="mob-item list">
+            <a class="mob-menu-mail link " href="mailto:info@devstudio.com">
+              info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mod-sot list">
+          <li class="mod-sot-list ">
+            <a class="mod-sot-link link" href="">Instagram</a>
+          </li>
+          <li class="mod-sot-list ">
+            <a class="mod-sot-link link" href="">Twitter</a>
+          </li>
+          <li class="mod-sot-list ">
+            <a class="mod-sot-link link" href="">Facebook</a>
+          </li>
+          <li class="mod-sot-list ">
+            <a class="mod-sot-link link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
     <!-- Главная-->
    <main>
        <!-- Фильтр- кнопки-->
@@ -335,5 +389,6 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
  </form>
 </div>
 </footer>
+<script src="./js/menu.js"></script>
  </body>
 </html>

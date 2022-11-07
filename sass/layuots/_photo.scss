@@ -1,9 +1,5 @@
 .photo-title{
     @include font(700, 18px, 2, 0.06em);
-//     font-weight: 700;
-//    font-size: 18px;
-//    line-height: 2;
-//    letter-spacing: 0.06em;
    margin-bottom: 4px;
    color: var(--primary-text-color);
    
@@ -11,11 +7,8 @@
    }
    .photo-text{
     @include font(400, 16px, 1.88, 0.03em);
-//    font-size: 16px;
-//    line-height: 1.88;
-//    letter-spacing: 0.03em;
    color: var(--titl-text-color);
-   
+
    }
    .photo-link{
        display: block;
