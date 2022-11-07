@@ -2,7 +2,7 @@
 .header{
     background-color:#FFFFFF ;
     border-bottom: 1px solid #ececec;
-    height: 60px;
+    min-height: 60px;
    
     @media screen  and (min-width: 768px){
       height: 80px;
@@ -14,7 +14,7 @@
 .header__container{
     display: flex;
     align-items: center;
-    // justify-content: space-between;
+    justify-content: flex-end;
     min-height: 60px;
 
 }
