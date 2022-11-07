@@ -60,6 +60,10 @@ img {
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .section {
   padding: 60px 0;
 }
@@ -72,7 +76,12 @@ img {
 .header {
   background-color: #FFFFFF;
   border-bottom: 1px solid #ececec;
-  height: 60px;
+  min-height: 40px;
+}
+@media screen and (min-width: 480px) {
+  .header {
+    height: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -88,7 +97,6 @@ img {
 .header__container {
   display: flex;
   align-items: center;
-  min-height: 60px;
 }
 
 .header__logo {
@@ -208,34 +216,84 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-open-btn {
+  margin-left: auto;
+  display: none;
+  padding: 0;
+  margin-left: auto;
+  border: none;
+  background-color: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .menu-open-btn {
+    display: block;
+  }
+}
+.menu-open-btn:focus {
+  fill: #2196f3;
+}
+
 .mob-menu {
   position: fixed;
-  z-index: 1;
   top: 0;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .mob-menu > .container {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: auto;
+  overflow: scroll;
 }
 
---------------------------- .menu-close-btn {
+.menu-close-btn {
+  display: block;
   margin-left: auto;
   border: none;
   background-color: transparent;
-  display: block;
 }
 
-.menu-open-btn {
-  margin-left: auto;
-  border: none;
-  background-color: #FFFFFF;
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu-link {
+  display: block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-link:hover, .mob-menu-link:focus {
+  color: var(--accent-color);
+}
+
+.mob-item {
+  margin-bottom: 32px;
+}
+
+.mob-menu-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mob-menu-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 
 .mod-sot {
@@ -270,47 +328,6 @@ img {
     line-height: 1.22;
     letter-spacing: 0.02em;
   }
-}
-
-.mob-menu-item:not(:last-child) {
-  margin-bottom: 32px;
-}
-
-.mob-menu-link {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.mob-menu-link:hover, .mob-menu-link:focus {
-  color: var(--accent-color);
-}
-
-.mob-menu-contacts {
-  display: block;
-  margin-top: 100px;
-}
-
-.mob-item {
-  margin-bottom: 32px;
-}
-
-.mob-menu__tel {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: #2196F3;
-}
-
-.mob-menu__mail {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: 0.02em;
-  color: #757575;
 }
 
 .logo {
