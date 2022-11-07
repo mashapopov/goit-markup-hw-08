@@ -1,69 +1,87 @@
+
 /* -------------шапка в mane--------------- */
 .overlay{
-    background-image: var(--bg-gradient),
-    url(../images/header/header-mob@1.jpg);
+    background-image:linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+   url(/images/header-mob-1x.jpg);
     margin-left: auto;
     margin-right: auto;
     max-width: 480px;
-    max-height: 400px;
-
-    // width: 100%;
-    // height: 400px;
+     height: 400px;
     background-color:  #C4C4C4;
     background-repeat: no-repeat;
     background-size: cover;
-        background-position: center;
-//     background-size: 480px 400px;
-// ---------------------------------
 
-
-
-
-
-
-  
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: var(--bg-gradient),
-        url('../images/header/header-mob@2.jpg');}
-
-
-        @media screen and (min-width: 768px) {
-            max-width: 768px;
-            max-height: 400px;
-            background-image: var(--bg-gradient),
-              url(../images/header/header-tab@1.jpg);
-            background-size: 768px 400px;
-            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-              background-image: var(--bg-gradient),
-                url('../images/header/header-tab@2.jpg');
-            }
-          }
-
-@media screen and (min-width: 1200px) {
-    max-width: 1600px;
-    max-height: 600px;
-    background-image: var(--bg-gradient),
-      url(../images/header/header-desk@1.jpg);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: var(--bg-gradient),
-        url('../images/header/header-desk@2.jpg');
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+       url(/images/header-mob-2x.jpg);
     }
-  }
+      
 
-    }
+    @media screen  and (min-width: 768px){
+        background-image:linear-gradient(to right,
+           rgba(47, 48, 58, 0.4),
+           rgba(47, 48, 58, 0.4)),
+          url(/images/header-tab-1x.jpg);
+          background-image:linear-gradient(to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+         url(/images/header-tab-2x.jpg);
+         max-width: 768px;
+          height: 400px;
+      }
+
+@media screen  and (min-width: 1200px){
+  background-image:linear-gradient(to right,
+     rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)),
+    url(/images/header.jpg);
+    background-image:linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+   url(/images/header-2x.jpg);
+
+   max-width: 1600px;
+   height: 600px;
+}
+
+
+
+
+     
+}
 
 
 
 
 
 
+
+
+
+
+//   @media screen  and (min-width: 480px){
+//       max-width: 480px;
+//       height: 400px;
+//  
+//   @media screen  and (min-width: 768px){
+//       max-width: 768px;
+//       height: 400px;
+// 
+//   @media screen  and (min-width: 1200px){
   
+//   max-width: 1600px;
+//   height: 600px;
+//   // max-height: 600px;
 
 
 
-
-
-.hat{
+  .hat{
     padding: 118px 0;
     text-align: center;   
     
