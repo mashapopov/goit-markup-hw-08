@@ -495,6 +495,11 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .property__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .property__item {
     width: calc((100% - 30px) / 2);
