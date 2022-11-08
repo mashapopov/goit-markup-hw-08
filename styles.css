@@ -1126,7 +1126,7 @@ color: rgba(255, 255, 255, 0.6);
  // line-height: 1.25;
  // letter-spacing: 0.03em; */
  display: flex;
- align-items: center;
+ /* align-items: center; */
  
  color: rgba(255, 255, 255, 0.6);
  
